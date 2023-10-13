@@ -1,8 +1,8 @@
 terraform {
    backend "s3" {
-   bucket = "<s3-bucket-for-storing-state" # replace this with a new bucket for persisting tf state
-   key    = "<tf-state-folder"
-   region = "<aws-region-for-tf-state-bucket>"
+      bucket = "<s3-bucket-for-storing-state" # replace this with a new bucket for persisting tf state
+      key    = "<tf-state-folder"
+      region = "<aws-region-for-tf-state-bucket>"
   }
   required_version = ">= 0.15.4"
   required_providers {
